@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 29 10:03:11 2018
+
+@author: ArcherX
+"""
+import easygui
+power = easygui.enterbox("输入你想获得的超能力！",default = "隐身")
+easygui.msgbox("-1s,你即将获得超能力" + power)
