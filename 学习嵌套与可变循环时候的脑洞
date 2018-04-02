@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 14:26:11 2018
+
+@author: ArcherX
+"""
+import time
+c = int(input("请输入密钥（您是VIP客户，密钥为10086）:"))
+if c == 10086:
+    print("验证通过开始加载至尊无敌黑客模式")
+    for b in range(0, 100, 10):
+        print(b,"\t","*" * b)
+        time.sleep(1)
+    print("检测到不明攻击")
+    for b in range(100, 0, -10):    
+        print(b,"\t","*" * b)
+        time.sleep(1)
+    print("机器将在10s后爆炸")
+    for i in range(10, 0, -1):
+        print(i)
+        time.sleep(1)
+    print("BOOM!")
+else:
+    print("密码错误，机器将在10s后爆炸")
+    for i in range(10, 0 ,-1):
+        print(i)
+        time.sleep(1)
+    print("BOOM!")
