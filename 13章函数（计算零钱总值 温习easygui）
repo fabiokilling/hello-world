@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr  3 14:08:17 2018
+
+@author: ArcherX
+"""
+#quarters二十五美分
+#dimes十美分
+#nickels五美分
+#pennies一美分
+''' quarters = 0.25
+    dimes = 0.10
+    nickels = 0.05
+    pennies = 0.01
+'''
+#print("%.2f"%(3*0.25+6*0.1+7*0.05+2*0.01))
+import easygui
+def Money(quarters,dimes,nickels,pennies):
+    
+    money = 0.25 * quarters + 0.1 * dimes + 0.05 * nickels + 0.01 * pennies
+    return money
+
+quarters = int(easygui.enterbox("quarters: "))
+dimes = int(easygui.enterbox("dimes: "))
+nickels = int(easygui.enterbox("nickels: "))
+pennies = int(easygui.enterbox("pennies: "))
+
+money = "%.2f"%(Money(quarters,dimes,nickels,pennies))
+
+easygui.msgbox("你一共有：" + str(money) + "$这么多钱")
