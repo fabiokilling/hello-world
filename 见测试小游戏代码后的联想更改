@@ -1,0 +1,173 @@
+name=input('请输入你的名字:')
+print('你好,%s,一起来测试你前世的名字吧！' %name)
+one=input('请输入你的属相:')
+on=one.encode('utf-8')
+on1='鼠'.encode('utf-8')
+on2='牛'.encode('utf-8')
+on3='虎'.encode('utf-8')
+on4='兔'.encode('utf-8')
+on5='龙'.encode('utf-8')
+on6='蛇'.encode('utf-8')
+on7='马'.encode('utf-8')
+on8='羊'.encode('utf-8')
+on9='猴'.encode('utf-8')
+on10='鸡'.encode('utf-8')
+on11='狗'.encode('utf-8')
+on12='猪'.encode('utf-8')
+if on==on1:
+    print('第一个字是:鬼')
+    on='鬼'
+elif on==on2:
+    print('第一个字是:东方')
+    on='东方'
+elif on==on3:
+    print('第一个字是:韩')
+    on='韩'
+elif on==on4:
+    print('第一个字是:南宫')
+    on='南宫'
+elif on==on5:
+    print('第一个字是:姬')
+    on='姬'
+elif on==on6:
+    print('第一个字是:欧阳')
+    on='欧阳'
+elif on==on7:
+    print('第一个字是:白')
+    on='白'
+elif on==on8:
+    print('第一个字是:舒')
+    on='舒'
+elif on==on9:
+    print('第一个字是:谢')
+    on='谢'
+elif on==on10:
+    print('第一个字是:李')
+    on='李'
+elif on==on11:
+    print('第一个字是:慕容')
+    on='慕容'
+elif on==on12:
+    print('第一个字是:文')
+    on='文'
+two=input('请输入你的两位数出生月份:')
+tw=two.encode('utf-8')
+tw1='01'.encode('utf-8')
+tw2='02'.encode('utf-8')
+tw3='03'.encode('utf-8')
+tw4='04'.encode('utf-8')
+tw5='05'.encode('utf-8')
+tw6='06'.encode('utf-8')
+tw7='07'.encode('utf-8')
+tw8='08'.encode('utf-8')
+tw9='09'.encode('utf-8')
+tw10='10'.encode('utf-8')
+tw11='11'.encode('utf-8')
+tw12='12'.encode('utf-8')
+if tw==tw1:
+    print('第二个字是:谷')
+    tw='谷'
+elif tw==tw2:
+    print('第二个字是:玉')
+    tw='玉'
+elif tw==tw3:
+    print('第二个字是:元')
+    tw='元'
+elif tw==tw4:
+    print('第二个字是:惊')
+    tw='惊'
+elif tw==tw5:
+    print('第二个字是:智')
+    tw='智'
+elif tw==tw6:
+    print('第二个字是:灵')
+    tw='灵'
+elif tw==tw7:
+    print('第二个字是:无')
+    tw='无'
+elif tw==tw8:
+    print('第二个字是:征')
+    tw='征'
+elif tw==tw9:
+    print('第二个字是:求')
+    tw='求'
+elif tw==tw10:
+    print('第二个字是:世')
+    tw='世'
+elif tw==tw11:
+    print('第二个字是:莲')
+    tw='莲'
+elif tw==tw12:
+    print('第二个字是:予')
+    tw='予'
+three=input('请输入你的手机号最后一位:')
+th=three.encode('utf-8')
+th1='1'.encode('utf-8')
+th2='2'.encode('utf-8')
+th3='3'.encode('utf-8')
+th4='4'.encode('utf-8')
+th5='5'.encode('utf-8')
+th6='6'.encode('utf-8')
+th7='7'.encode('utf-8')
+th8='8'.encode('utf-8')
+th9='9'.encode('utf-8')
+th10='0'.encode('utf-8')
+if th==th1:
+    print('第三个字是:子')
+    th='子'
+elif th==th2:
+    print('第三个字是:命')
+    th='命'
+elif th==th3:
+    print('第三个字是:英')
+    th='英'
+elif th==th4:
+    print('第三个字是:云')
+    th='云'
+elif th==th5:
+    print('第三个字是:民')
+    th='民'
+elif th==th6:
+    print('第三个字是:吉')
+    th='吉'
+elif th==th7:
+    print('第三个字是:坤')
+    th='坤'
+elif th==th8:
+    print('第三个字是:宝')
+    th='宝'
+elif th==th9:
+    print('第三个字是:琛')
+    th='琛'
+elif th==th10:
+    print('第三个字是:旭')
+    th='旭'
+print('亲爱的%s,你的前世名字叫:' %name,on,tw,th)
+
+
+
+
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr  4 10:21:39 2018
+
+@author: ArcherX
+"""
+name=input('请输入你的名字:')
+print('你好,%s,一起来测试你前世的名字吧！' %name)
+dict1={'鼠':'鬼','牛':'东方','虎':'韩','兔':'南宫', '龙':'姬','蛇':'欧阳','马':'白', '羊':'舒', '猴':'谢','鸡':'李','狗':'慕容','猪':'文'}
+dict2={'01':'谷','02':'玉','03':'元','04':'惊','05':'智','06':'灵','07':'无','08':'征','09':'求','10':'世','11':'莲','12':'予'}
+dict3={1:'子',2:'命',3:'英',4:'云',5:'民',6:'吉',7:'坤',8:'宝',9:'琛',0:'旭'}
+def your_name():
+    one = input('请输入你的属相:')
+    print('第一个字是%s'%dict1[one])
+    two = str(input('请输入你的两位数出生月份:'))
+    print('第二个字是%s'%dict2[two])
+    three = int(input('请输入你的手机号最后一位:'))
+    print('第三个字是%s'%dict3[three])
+    get_name = dict1[one] + dict2[two] + dict3[three]
+    return get_name
+get_name=your_name()
+print('亲爱的%s,你的前世名字叫:%s' %(name,get_name))
+input("按ENTER退出程序")
+
