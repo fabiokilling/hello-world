@@ -1,0 +1,49 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr  8 10:14:01 2018
+
+@author: ArcherX
+"""
+class 银行账户:
+    def __init__(self, 账号, 帐户名):
+        self.账号 = 账号
+        self.帐户名 = 帐户名
+        self.余额 = 0.0
+        
+    def 利息(self):
+        print("利息:", self.余额)
+        
+    def 存款(self, 金额):
+        self.余额 = self.余额 + 金额
+        print("你存款:", 金额)
+        print("余额:", self.余额)
+        
+    def 取款(self, 金额):
+        if self.余额 >= 金额:
+            self.余额 = self.余额 - 金额
+            print("你取款:",金额)
+            print("余额:", self.余额)
+        else:
+            print("你尝试取款:", 金额)
+            print("账号余额是:", self.余额)
+            print("取款被拒，资金不足。")
+
+class 利息账户(银行账户):
+    def 获得利息(self, 利率):
+        利息 = self.余额 * 利率
+        print("账户利率为", 利率 * 100, "%")
+        self.存款(利息)
+
+我的账户 = 银行账户(234567, "Warren Samde")
+print("帐户名:", 我的账户.帐户名)
+print("账号:", 我的账户.账号)
+我的账户.存款(34.52)
+我的账户.取款(12.25)
+我的账户.取款(30.18)
+
+我的账户 = 利息账户(234567, "Warren Sande")
+print("帐户名:", 我的账户.帐户名)
+print("账号:", 我的账户.账号)
+我的账户.利息()
+我的账户.存款(34.52)
+我的账户.获得利息(0.11)
